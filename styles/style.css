@@ -1,1 +1,236 @@
-/* место для вашего кода */
+.header {
+  position: relative;
+  height: 293px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_header {
+  display: flex;
+  gap: 13px;
+}
+
+.logo {
+  height: 105px;
+  width: 148px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact_info_header {
+  display: block;
+  width: 240px;
+}
+
+.cover {
+  height: 757px;
+  background-image: url("/images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cover_overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: white;
+  margin-right: -0.3em;
+  display: flex;
+}
+
+.cover_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 165px 50px 100px 50px;
+}
+
+.cover_text > .h1:nth-child(2) {
+  justify-content: center;
+}
+
+.cover_text > .h1:nth-child(3) {
+  justify-content: flex-end;
+}
+
+.cover_desc {
+  font-size: 22px;
+  word-spacing: 20px;
+  color: white;
+  text-transform: uppercase;
+  padding: 0px 50px 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  justify-content: flex-end;
+  font-size: inherit;
+  text-transform: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid white;
+  padding: 12px 32px;
+  cursor: pointer;
+}
+
+.lots {
+  margin: 180px 24px 120px 24px;
+  font-size: 20px;
+}
+
+.lots_title {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+.cards {
+  list-style: none;
+  color: white;
+  margin-top: 27px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_film,
+.card_book,
+.card_painting {
+  width: 334px;
+  height: 596px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_film {
+  background-image: url("/images/card-lot-01.jpg");
+}
+
+.card_book {
+  background-image: url("/images/card-lot-02.jpg");
+}
+
+.card_painting {
+  background-image: url("/images/card-lot-03.jpg");
+}
+
+.card_overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_title {
+  margin: 48px 40px 0px 40px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card_text {
+  margin: 0px 40px 48px 40px;
+}
+
+.more {
+  padding-left: 40px;
+}
+
+.about {
+  margin: 0px 24px 180px 24px;
+  padding: 35px 0px 0px 47px;
+  display: grid;
+}
+
+.logo_circle {
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.logo_white {
+  height: 113px;
+  width: 142px;
+}
+
+.about_title {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 40px;
+  text-transform: uppercase;
+  align-self: center;
+  margin-left: 72px;
+}
+
+.about_text {
+  font-size: 20px;
+  grid-column: 2;
+  grid-row: 2;
+  margin-left: 72px;
+}
+
+.p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding-right: 5px;
+}
+
+.footer {
+  position: relative;
+  height: 180px;
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  align-items: 0px;
+  justify-content: space-between;
+}
+
+.contact_info_footer {
+  display: block;
+  width: 265px;
+}
+
+.menu_footer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.socials_icons {
+  width: 48px;
+  height: 48px;
+}
